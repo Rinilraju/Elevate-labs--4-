@@ -1,0 +1,155 @@
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f3e4d2;
+  color: #4a3f35;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 4vw;
+  background-color: #c7a47a;
+}
+
+.header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4vh;
+  margin: 0;
+}
+
+
+.navbar {
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #4a3f35;
+  font-size: 2.2vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 3vh;
+  cursor: pointer;
+}
+
+
+.center {
+  margin-top: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+  padding: 5vh 5vw;
+  background-color: #c7a47a;
+  flex-wrap: wrap;
+}
+
+.center img {
+  width: 30vh;
+  height: 45vh;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  background-color: #f3e4d2;
+  padding: 3vh 3vw;
+  border-radius: 10px;
+  font-size: 2.5vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.box button {
+  width: 200px;
+  margin-top: 2vh;
+  padding: 1vh;
+  background-color: transparent;
+  border: 2px solid #4a3f35;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.box button:hover {
+  background-color: #4a3f35;
+  color: white;
+}
+
+.site-footer {
+  background-color:#c7a47a ;
+  text-align: center;
+  padding: 3vh 0;
+  margin-top: 20vh;
+}
+
+.footer-content h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 3vh;
+}
+
+.footer-content p {
+  font-size: 2vh;
+  margin: 1vh 0;
+  color: white;
+}
+
+.socials a img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #c7a47a;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 1vh;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .center {
+    flex-direction: column;
+    padding: 4vh 2vw;
+  }
+
+  .box {
+    margin-top: 4vh;
+  }
+}

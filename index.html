@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Chaiwala</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>chaiwala</h1>
+      <nav class="navbar">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About chaiwala</a></li>
+          <li><a href="#">Signup/Login</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="center">
+      <img src="chai2.png" alt="Chai" />
+      <div class="box">
+        <p>Check out what we serve</p>
+        <button class="button">Order Now</button>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h3>chaiwala</h3>
+      <p>Bringing you the warmth of chai, wherever you are.</p>
+      <div class="socials">
+        <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="x.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
