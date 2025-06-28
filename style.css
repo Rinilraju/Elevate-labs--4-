@@ -134,6 +134,7 @@ body {
     width: 200px;
     padding: 1vh;
     z-index: 999;
+    border-radius: 10px;
   }
 
   .nav-links.show {
